@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #cc7832;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># Uygulama - Mülakat Sorusu</span>
+<span class="s0">#######################</span>
+
+<span class="s0"># Amaç: Aşağıdaki şekilde string değiştiren fonksiyon yazmak istiyoruz.</span>
+
+<span class="s0"># before: &quot;hi my name is john and i am learning python&quot;</span>
+<span class="s0"># after: &quot;Hi mY NaMe iS JoHn aNd i aM LeArNiNg pYtHoN&quot;</span>
+
+<span class="s1">ifade = </span><span class="s2">&quot;hi my name is john and i am learning python&quot;</span>
+
+<span class="s3">def </span><span class="s1">mulakat(str):</span>
+    <span class="s1">new_ifade= </span><span class="s2">&quot;&quot;</span>
+    <span class="s3">for </span><span class="s1">irem </span><span class="s3">in </span><span class="s1">range(len(str)):</span>
+        <span class="s3">if </span><span class="s1">irem % </span><span class="s4">2 </span><span class="s1">== </span><span class="s4">0</span><span class="s1">:</span>
+         <span class="s1">new_ifade += str[irem].upper()</span>
+        <span class="s3">else</span><span class="s1">:</span>
+         <span class="s1">new_ifade += str[irem].lower()</span>
+    <span class="s1">print(new_ifade)</span>
+
+<span class="s1">mulakat(ifade)</span>
+
+</pre>
+</body>
+</html>
